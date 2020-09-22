@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jeanmarcos/Projects/ListaShop/ListaShop/ListaShop.csproj": {}
+  },
+  "projects": {
+    "/Users/jeanmarcos/Projects/ListaShop/ListaShop/ListaShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jeanmarcos/Projects/ListaShop/ListaShop/ListaShop.csproj",
+        "projectName": "ListaShop",
+        "projectPath": "/Users/jeanmarcos/Projects/ListaShop/ListaShop/ListaShop.csproj",
+        "packagesPath": "/Users/jeanmarcos/.nuget/packages/",
+        "outputPath": "/Users/jeanmarcos/Projects/ListaShop/ListaShop/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jeanmarcos/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -14,12 +14,10 @@ namespace ListaShop.Controllers
     public class PersonController : ControllerBase
     {
         
-        private readonly ILogger<PersonController> _logger;
         private IPersonService _personService;
 
-        public PersonController(ILogger<PersonController> logger, IPersonService personService)
+        public PersonController( IPersonService personService)
         {
-            _logger = logger;
             _personService = personService;
         }
 

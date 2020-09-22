@@ -9,29 +9,50 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using ListaShop.Services;
 using ListaShop.Model.Context;
 using Microsoft.EntityFrameworkCore;
-using ListaShop.Db;
 using MySql.Data.EntityFramework;
+
 
 namespace ListaShop
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostEnvironment hostEnvironment)
         {
             _configuration = configuration;
+            _hostEnvironment = hostEnvironment;            
         }
 
         public IConfiguration _configuration { get; }
+        public IHostEnvironment _hostEnvironment { get; set; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = _configuration["MySqlConnection:MySqlConnectionString"];
             services.AddDbContext<MySqlContext>(options => options.UseMySql(connectionString));
+
+            if(_hostEnvironment.IsDevelopment())
+            {
+                try
+                {
+                    var evolvoConnection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                    var evolve = new Evolve.Evolve(evolvoConnection, msg => Console.WriteLine(msg))
+                    {
+                        Locations = new List<string> { "db/migrations" },
+                        IsEraseDisabled = true
+                    };
+
+                    evolve.Migrate();
+
+
+                }catch (Exception ex)
+                {
+                    
+                    throw ex;
+                }
+            } 
 
             services.AddScoped<IPersonService, PersonService>();
             services.AddControllers();

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mP0JodwkmXPoTBGs0sLryRDiUGfY6inEdMKjMpa8MouDfLFb1xpiIXKcD+jUhrmfxepRY/q7AbUYL8cC3rQ3+g==",
+  "dgSpecHash": "K9nV54v2HoZnCI/ObaBXXL6MwXfcYoclNPBfie7ElbBwLfvjTWYUgl0+HimyaGNKs45pMXRXONX4NlF9BAO7rw==",
   "success": true,
   "projectFilePath": "/Users/jeanmarcos/Projects/ListaShop/ListaShop/ListaShop.csproj",
   "expectedPackageFiles": [
+    "/Users/jeanmarcos/.nuget/packages/evolve/2.4.0/evolve.2.4.0.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

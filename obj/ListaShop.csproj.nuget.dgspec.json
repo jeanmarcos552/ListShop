@@ -36,6 +36,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Evolve": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
             "MySql.Data.EntityFramework": {
               "target": "Package",
               "version": "[8.0.21, )"

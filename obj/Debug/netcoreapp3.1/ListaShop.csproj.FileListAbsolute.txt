@@ -40,3 +40,7 @@
 /Users/jeanmarcos/Projects/ListaShop/ListaShop/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/jeanmarcos/Projects/ListaShop/ListaShop/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /Users/jeanmarcos/Projects/ListaShop/ListaShop/obj/Debug/netcoreapp3.1/ListaShop.csproj.CopyComplete
+/Users/jeanmarcos/Projects/ListaShop/ListaShop/bin/Debug/netcoreapp3.1/app.config
+/Users/jeanmarcos/Projects/ListaShop/ListaShop/bin/Debug/netcoreapp3.1/ListaShop.dll.config
+/Users/jeanmarcos/Projects/ListaShop/ListaShop/bin/Debug/netcoreapp3.1/MySql.Data.EntityFramework.dll
+/Users/jeanmarcos/Projects/ListaShop/ListaShop/bin/Debug/netcoreapp3.1/Evolve.dll

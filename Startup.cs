@@ -10,9 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ListaShop.Services;
+using ListaShop.Services.Implementations;
 using ListaShop.Model.Context;
 using Microsoft.EntityFrameworkCore;
-using MySql.Data.EntityFramework;
+using ListaShop.Repository.Generic;
 using ListaShop.Repository;
 using ListaShop.Controllers;
 
@@ -53,11 +54,11 @@ namespace ListaShop
                     
                     throw ex;
                 }
-            } 
+            }
 
             services.AddScoped<IPersonService, PersonService>();
             services.AddScoped<PersonRepository>();
-            services.AddScoped<ShopController>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
             services.AddControllers();
         }

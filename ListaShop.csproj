@@ -12,6 +12,9 @@
     <Folder Include="Model\Context\" />
     <Folder Include="db\" />
     <Folder Include="db\migrations\" />
+    <Folder Include="Model\Base\" />
+    <Folder Include="Repository\Generic\" />
+    <Folder Include="Services\Implementations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.1" />

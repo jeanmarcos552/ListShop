@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+
 using ListaShop.Services;
 using ListaShop.Model;
 
@@ -24,13 +20,13 @@ namespace ListaShop.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_personService.Get());
+            return Ok(_personService.Find());
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
-            return Ok(_personService.GetById(id));
+            return Ok(_personService.FindById(id));
         }
 
         [HttpPost]

@@ -5,7 +5,7 @@ using ListaShop.Model;
 using ListaShop.Model.Context;
 using ListaShop.Repository;
 
-namespace ListaShop.Services
+namespace ListaShop.Services.Implementations
 {
     public class PersonService : IPersonService
     {
@@ -27,12 +27,12 @@ namespace ListaShop.Services
             _repository.Delete(id);
         }
       
-        public List<Person> Get()
+        public List<Person> Find()
         {
             return _repository.FindAll();
         }
 
-        public Person GetById(long id)
+        public Person FindById(long id)
         {
             return _repository.FindById(id);           
         }

@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using ListaShop.Model;
 
+
 namespace ListaShop.Services
 {
     public interface IPersonService
     {
         Person Create(Person person);
 
-        List<Person> Get();
+        List<Person> Find();
 
-        Person GetById(long id);
+        Person FindById(long id);
 
         void Delete(long id);
 

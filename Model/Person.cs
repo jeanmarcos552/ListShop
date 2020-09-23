@@ -1,11 +1,11 @@
 using System;
+using ListaShop.Model.Base;
 
 namespace ListaShop.Model
 {
-    public class Person
+    public class Person : BaseEntity
     {
-        public long? Id { get; set; }
-
+        
         public string FirstName { set; get; }
 
         public string LastName { set; get; }

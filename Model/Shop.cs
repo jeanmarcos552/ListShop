@@ -1,9 +1,9 @@
 ﻿using System;
-
+using ListaShop.Model.Base;
 
 namespace ListaShop.Model
 {
-    public class Shop
+    public class Shop : BaseEntity
     {
         public bool Status { get; set; }
 

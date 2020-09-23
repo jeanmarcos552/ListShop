@@ -5,7 +5,6 @@ namespace ListaShop.Model
 {
     public class Person : BaseEntity
     {
-        
         public string FirstName { set; get; }
 
         public string LastName { set; get; }

@@ -8,7 +8,7 @@ namespace ListaShop.Services.Implementations
     public class ShopService : IShopService
     {
 
-        private readonly IRepository<Shop> _repository;
+        private IRepository<Shop> _repository;
 
         public ShopService(IRepository<Shop> repository) {
             _repository = repository;
@@ -29,7 +29,7 @@ namespace ListaShop.Services.Implementations
             return _repository.FindById(id);
         }
 
-        public List<Shop> FindeAll()
+        public List<Shop> FindAll()
         {
             return _repository.FindAll();
         }

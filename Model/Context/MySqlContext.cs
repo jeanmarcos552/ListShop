@@ -11,5 +11,7 @@ namespace ListaShop.Model.Context
         public MySqlContext (DbContextOptions<MySqlContext> options) : base(options) { }
 
         public DbSet<Person> Person { set; get; }
+
+        public DbSet<Shop> Shop { set; get; }
     }
 }

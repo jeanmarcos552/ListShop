@@ -8,8 +8,7 @@ namespace ListaShop.Controllers
     [ApiController]
     [Route("api/[controller]")]
     public class PersonController : ControllerBase
-    {
-        
+    {        
         private IPersonService _personService;
 
         public PersonController( IPersonService personService)

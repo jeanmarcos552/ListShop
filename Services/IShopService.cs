@@ -8,7 +8,7 @@ namespace ListaShop.Services
     {
         Shop Create(Shop shop);
 
-        List<Shop> FindeAll();
+        List<Shop> FindAll();
 
         Shop FindById(long id);
 

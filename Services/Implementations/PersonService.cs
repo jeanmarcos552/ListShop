@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+
 using ListaShop.Model;
-using ListaShop.Model.Context;
-using ListaShop.Repository;
+using ListaShop.Repository.Generic;
 
 namespace ListaShop.Services.Implementations
 {
     public class PersonService : IPersonService
     {
-        private PersonRepository _repository;
+        private IRepository<Person> _repository;
 
-        public PersonService (PersonRepository repository)
+        public PersonService (IRepository<Person> repository)
         {
             _repository = repository;
         }
-
 
         public Person Create(Person person)
         {

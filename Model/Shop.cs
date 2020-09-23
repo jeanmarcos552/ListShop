@@ -1,8 +1,10 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using ListaShop.Model.Base;
 
 namespace ListaShop.Model
 {
+    [Table("shopping")]
     public class Shop : BaseEntity
     {
         public bool Status { get; set; }

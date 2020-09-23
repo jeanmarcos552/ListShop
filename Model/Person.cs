@@ -14,5 +14,7 @@ namespace ListaShop.Model
 
         public string PassWord { set; get; }
 
+        //public virtual ICollection<ListaShop> ListaShop { get; set; }
+
     }
 }

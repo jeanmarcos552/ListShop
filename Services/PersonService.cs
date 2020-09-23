@@ -3,86 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using ListaShop.Model;
 using ListaShop.Model.Context;
+using ListaShop.Repository;
 
 namespace ListaShop.Services
 {
     public class PersonService : IPersonService
     {
-        private MySqlContext _context;
+        private PersonRepository _repository;
 
-        public PersonService (MySqlContext context)
+        public PersonService (PersonRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
 
         public Person Create(Person person)
         {
-            try
-            {
-                _context.Add<Person>(person);
-                _context.SaveChanges();
-
-                return person;
-            } catch(Exception ex) {
-                throw ex;
-            }
-            
+            return _repository.Create(person);
         }
 
         public void Delete(long id)
         {
-            var person = _context.Person.SingleOrDefault(p => p.Id.Equals(id));            
-
-            try
-            {
-                if (person != null)
-                {
-                    _context.Person.Remove(person);
-                    _context.SaveChanges();
-                }
-
-            }catch (Exception ex)
-            {
-                throw ex;
-            }
+            _repository.Delete(id);
         }
       
         public List<Person> Get()
         {
-            return _context.Person.ToList<Person>();
+            return _repository.FindAll();
         }
 
         public Person GetById(long id)
         {
-            var person = _context.Person.SingleOrDefault(p => p.Id.Equals(id));
-
-            try
-            {
-                return person;
-
-            }catch (Exception ex) {
-                throw ex;
-            }
+            return _repository.FindById(id);           
         }
 
         public Person Update(Person person)
         {
-            var isPerson = _context.Person.SingleOrDefault(p => p.Id.Equals(person.Id));
-
-
-            if (isPerson == null) return person;
-
-            try
-            {
-                _context.Entry(isPerson).CurrentValues.SetValues(person);
-                _context.SaveChanges();
-                return person;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return _repository.Update(person);            
         }
     }
 }

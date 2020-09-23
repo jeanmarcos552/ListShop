@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K9nV54v2HoZnCI/ObaBXXL6MwXfcYoclNPBfie7ElbBwLfvjTWYUgl0+HimyaGNKs45pMXRXONX4NlF9BAO7rw==",
+  "dgSpecHash": "YkJD/OnQSWcPpg9je5Z0Ri+hEhiMP5QzarMUFJ1fHvbpsazYlsAGXHLkBN1g8cy+LZoPNBoailulEWvZkPDUNw==",
   "success": true,
   "projectFilePath": "/Users/jeanmarcos/Projects/ListaShop/ListaShop/ListaShop.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "/Users/jeanmarcos/.nuget/packages/mysql.data.entityframework/8.0.21/mysql.data.entityframework.8.0.21.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/mysqlconnector/0.69.9/mysqlconnector.0.69.9.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
-    "/Users/jeanmarcos/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.0/pomelo.entityframeworkcore.mysql.3.2.0.nupkg.sha512",
+    "/Users/jeanmarcos/.nuget/packages/pomelo.entityframeworkcore.mysql/3.2.1/pomelo.entityframeworkcore.mysql.3.2.1.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
     "/Users/jeanmarcos/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",

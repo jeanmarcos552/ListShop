@@ -13,7 +13,8 @@ using ListaShop.Services;
 using ListaShop.Model.Context;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.EntityFramework;
-
+using ListaShop.Repository;
+using ListaShop.Controllers;
 
 namespace ListaShop
 {
@@ -55,6 +56,9 @@ namespace ListaShop
             } 
 
             services.AddScoped<IPersonService, PersonService>();
+            services.AddScoped<PersonRepository>();
+            services.AddScoped<ShopController>();
+
             services.AddControllers();
         }
 
